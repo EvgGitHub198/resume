@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+.balls{
+
+    background:#bcc5ff98;
+    background-image:radial-gradient(circle, rgba(255,255,255,.2) 15px, transparent 0px), radial-gradient(circle, rgba(255,255,255,.4) 10px, transparent 0px);
+    background-size:40px 40px, 80px 80px;
+    background-position: 10px 10px, 0px 0px;
+    blend-mode:none;
+    animation: balls linear 10s infinite;
+}
+
+@keyframes balls{100%{background-position:50px 50px, 80px 80px;}}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: rgba(21, 21, 21, 0.836);
+
+}
+
+.avatar {
+    margin-top: 22px;
+    width: 235px;
+    height: 260px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 14px rgba(21, 21, 21, 0.733);
+
+    
+}
+
+.info{
+    margin-bottom: 20px;
+    display: flex;
+}
+
+@media (max-width: 600px){
+    .info{
+        display: block;
+        text-align: center;
+    }
+}
+
+.text-info{
+    margin-left: 35px;
+
+}
+.info p {
+    color: rgb(17, 67, 191);
+    margin: 0;
+    font-style: bold;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+
+}
+
+
+.container {
+    max-width: 850px;
+    margin: auto;
+
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+.bg-purple{
+    background: #7EC0EE
+}
+
+
+.card {
+    padding: 15px 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+
+.list {
+    margin-bottom: 7px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.table{
+    width: 100%;
+}
+
+.table dt {
+    padding-bottom: 10px;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.form-group label{
+    display: block;
+    font-size: 17px;
+}
+.form-group input, 
+.form-group textarea
+{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid wheat;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+
+}
+
+.row{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .form-group{
+    width: 50%;
+    margin-right: 50px;
+}
+
+.btn {
+    border: 0;
+    line-height: 1.7;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-family: inherit;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(0, 40, 220);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.btn:hover{
+    background-color: rgba(255, 0, 0, 1);
+} 
+
+.telega, 
+.phone,
+.mail{
+    width: 20px;
+    margin-bottom: -3px;
+
+}
+
+
+.user-contacts{
+    margin-top: -20px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.tech{
+    white-space: nowrap;
+    margin-left: -15px;
+}
+.tech-item{
+    white-space: normal;	
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+}
+.tech .tech-item:first-child {
+
+    margin-left: 5px;
+}
